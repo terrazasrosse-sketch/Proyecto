@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITAL-NUTRICION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    <img src="Imagenes/logo_vital.png" alt="logo de la marca Vital"width="200">
+    <h1> Solicitud de Turno Nutricional</h1>
+    <p>Completa tus datos de contacto, el servicio de interes y la fecha/horario
+        preferidos para coordinar tu atencion en VITAL-NUTRICION
+    </p>
+    </header>
+    
+    <form>
+       <h2>Datos Personales</h2> 
+    
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <br><br>
+        
+        <label for="Celular">Celular:</label>
+        <input type="text" id="Celular" name="Celular" required>
+
+        <br><br>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <br><br>
+
+        <h2>Servicios</h2>
+        <div class="opcion-servicio">
+        <input type="radio" id="nutricion" name="servicios" value="nutricion" required>
+        <label for="nutricion">Consultas nutricionales personalizadas</label>
+        </div>
+        <br>
+        <div class="opcion-servicio">
+        <input type="radio" id="peso" name="servicios" value="peso" required>
+        <label for="peso">Control de peso y bienestar</label>
+        </div>
+        <br>
+        <div class="opcion-servicio">
+        <input type="radio" id="familia" name="servicios" value="familia" required>
+        <label for="familia">Asesoría de alimentación familiar</label>
+        </div>
+
+        <br><br>
+
+        <h2>Fecha</h2>
+        <label for="Fecha">Registra tu fecha (Recuerda que no trabajamos Domingos):</label>
+        <input type="date" id="Fecha" name="Fecha" required>
+
+        <br><br>
+
+        <h2>Horario</h2>
+        <label for="Horario">El horario que desees:</label>
+        <input type="time" id="time" name="time" required>
+ 
+        <br><br>
+        <h2>Comentarios</h2>
+        <label for="Comentario">Alguna especificacion respecto a su tratamiento?:</label>
+        <textarea id="comentario" name="comentario" rows="2"></textarea>
+        <br><br>
+        <button type="submit">Reservar consulta</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

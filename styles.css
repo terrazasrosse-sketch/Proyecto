@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #CDEEF3;
+    color: #4F8179;
+    line-height: 1.6;
+}
+
+
+/*ENCABEZADO */
+
+header {
+    background: linear-gradient(135deg, #96DFD8, #85D4BE);
+    color: white;
+    text-align: center;
+    padding: 45px 180px 40px 40px;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+header p {
+    margin: 10px auto;
+    max-width: 850px;
+    font-size: 17px;
+    color: #F7FFFF;
+}
+
+header p:nth-of-type(2) {
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.25);
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*MENÚ DE NAVEGACIÓN */
+
+nav {
+    background-color: #00A497;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+    gap: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #D6E9AA;
+    color: #00A497;
+    transform: translateY(-2px);
+}
+
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+
+/*SECCIONES */
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #85D4BE;
+}
+
+section h2 {
+    color: #00A497;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #AEE6CB;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+    color: #4F8179;
+    text-align: justify;
+}
+
+
+/* SECCIÓN INICIO */
+
+#Inicio {
+    background: linear-gradient(
+        135deg,
+        #FFFFFF,
+        #DAF1DE
+    );
+    border-left-color: #D6E9AA;
+}
+
+#Inicio h2 {
+    font-size: 30px;
+}
+
+#Inicio p {
+    line-height: 1.8;
+}
+
+
+/* SERVICIOS */
+
+#Servicios ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Servicios li {
+    background-color: #DAF1DE;
+    margin: 18px 0;
+    padding: 22px;
+    border-radius: 14px;
+    border-left: 5px solid #85D4BE;
+    transition: 0.3s;
+}
+
+#Servicios li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.10);
+    background-color: #AEE6CB;
+}
+
+#Servicios h3 {
+    color: #3B8F83;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#Servicios p {
+    margin-bottom: 0;
+}
+
+
+/* HORARIOS */
+
+#Horarios {
+    background-color: #F7FCF8;
+}
+
+#Horarios ul {
+    padding-left: 20px;
+}
+
+#Horarios li {
+    color: #3B8F83;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#Horarios p {
+    background-color: #CDEEF3;
+    color: #4F8179;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+}
+
+
+/* RECOMENDACIONES */
+
+#Recomendaciones ol {
+    padding-left: 25px;
+}
+
+#Recomendaciones li {
+    background-color: #F4FBF5;
+    margin: 15px 0;
+    padding: 18px 20px;
+    border-radius: 14px;
+    border-left: 5px solid #D6E9AA;
+}
+
+#Recomendaciones li::marker {
+    color: #00A497;
+    font-weight: bold;
+}
+
+#Recomendaciones h3 {
+    color: #3B8F83;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+#Recomendaciones p {
+    margin-bottom: 0;
+}
+
+
+/* PREGUNTAS FRECUENTES */
+
+#Preguntas-Frecuentes {
+    background: linear-gradient(
+        135deg,
+        #FFFFFF,
+        #DAF1DE
+    );
+}
+
+#Preguntas-Frecuentes ol {
+    padding-left: 25px;
+}
+
+#Preguntas-Frecuentes li {
+    margin: 18px 0;
+    padding: 18px;
+    background-color: white;
+    border-radius: 12px;
+    border-left: 5px solid #AEE6CB;
+}
+
+#Preguntas-Frecuentes h4 {
+    color: #3B8F83;
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}
+
+#Preguntas-Frecuentes p {
+    margin-top: 8px;
+}
+
+
+/* DATOS DE CONTACTO */
+
+#Preguntas-Frecuentes > h4 {
+    background-color: #CDEEF3;
+    padding: 12px 18px;
+    border-radius: 12px;
+    display: inline-block;
+    color: #3B8F83;
+    margin: 5px 0 15px 0;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #00A497;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: white;
+}
+
+footer p:first-child {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+/* DISEÑO RESPONSIVO */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 35px 25px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    header img {
+        position: static;
+        transform: none;
+        margin-top: 15px;
+    }
+
+    nav {
+        position: static;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        text-align: left;
+    }
+}
